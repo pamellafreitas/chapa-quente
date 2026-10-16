@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cardápio | Chapa Quente Burger Co. - Rio de Janeiro</title>
+  <meta name="description"
+    content="Confira o cardápio da Chapa Quente Burger Co. Smash burgers artesanais, queijo derretido, molhos da casa, batatas crocantes e muito mais no Rio de Janeiro.">
+  <link rel="canonical" href="https://chapaquenteburger.com.br/cardapio.html">
+
+  <!-- Open Graph / Redes Sociais -->
+  <meta property="og:type" content="restaurant.menu">
+  <meta property="og:title" content="Cardápio Oficial - Chapa Quente Burger Co.">
+  <meta property="og:description"
+    content="Conheça nossos smash burgers artesanais. Crosta perfeita, suculência máxima e ingredientes selecionados.">
+  <meta property="og:image" content="assets/images/Logo.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/Logo.png">
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Schema.org - Menu do Restaurante -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Menu",
+    "name": "Cardápio Chapa Quente Burger Co.",
+    "url": "https://chapaquenteburger.com.br/cardapio.html",
+    "mainEntityOfPage": "https://chapaquenteburger.com.br/cardapio.html",
+    "inLanguage": "pt-BR"
+  }
+  </script>
+</head>
+
+<body>
+
+  <!-- Cabeçalho Fixo -->
+  <header class="site-header" id="site-header">
+    <div class="container header-container">
+      <!-- Logo Oficial à Esquerda -->
+      <a href="index.html" class="brand-link" aria-label="Chapa Quente Burger Co. - Página Inicial">
+        <img src="assets/images/Logo.png" alt="Chapa Quente Burger Co. - Smash na chapa, sabor sem pressa"
+          class="brand-logo-img" width="210" height="48">
+      </a>
+
+      <!-- Menu Desktop Centro/Direita -->
+      <nav class="desktop-nav" aria-label="Navegação principal">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Início</a></li>
+          <li><a href="cardapio.html" class="nav-link active">Cardápio</a></li>
+        </ul>
+        <!-- Botão Pedir Agora (Extrema Direita) -->
+        <a href="https://wa.me/5521999999999" target="_blank" rel="noopener noreferrer" class="btn-header-order"
+          aria-label="Pedir agora pelo WhatsApp">
+          Pedir agora
+        </a>
+      </nav>
+
+      <!-- Botão Hambúrguer Mobile (Trocadilho visual: pão, carne, pão) -->
+      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu de navegação" aria-expanded="false"
+        aria-controls="mobile-overlay">
+        <span class="bun-top"></span>
+        <span class="patty"></span>
+        <span class="bun-bottom"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Menu Mobile Fullscreen Overlay -->
+  <div class="mobile-overlay" id="mobile-overlay" aria-hidden="true">
+    <nav aria-label="Navegação móvel">
+      <ul class="mobile-nav-links">
+        <li><a href="index.html" class="mobile-nav-link">Início</a></li>
+        <li><a href="cardapio.html" class="mobile-nav-link active">Cardápio</a></li>
+      </ul>
+    </nav>
+    <div class="mobile-cta-box">
+      <p class="mobile-tagline">"Smash na chapa, sabor sem pressa."</p>
+      <a href="https://wa.me/5521999999999" target="_blank" rel="noopener noreferrer" class="btn-mobile-order">
+        Pedir agora no WhatsApp
+      </a>
+    </div>
+  </div>
+
+  <!-- Conteúdo Principal do Cardápio -->
+  <main id="main-content">
+    <!-- TOPO DA PÁGINA: BANNER HERO (Altura 360px) -->
+    <section class="menu-page-hero" aria-label="Apresentação do Cardápio">
+      <!-- Imagem de Fundo (Chapa na Brasa com Smashing Burgers) -->
+      <img src="assets/images/menu-hero.jpg"
+        alt="Chapa quente de hamburgueria com smash burgers suculentos sendo preparados com queijo derretido, cebolas e fumaça"
+        class="menu-page-hero-img" width="1920" height="820" fetchpriority="high">
+      <!-- Overlay Preto 60% -->
+      <div class="menu-page-hero-overlay" aria-hidden="true"></div>
+
+      <!-- Conteúdo Centralizado -->
+      <div class="menu-page-hero-content" data-reveal>
+        <h1 class="menu-page-title">Cardápio</h1>
+        <p class="menu-page-desc">
+          Tudo feito na hora, na chapa bem quente. Escolha seu favorito e monte seu combo.
+        </p>
+      </div>
+    </section>
+
+    <!-- BARRA DE NAVEGAÇÃO INTERNA FIXA (ÂNCORAS) -->
+    <nav class="category-nav-bar" id="category-nav-bar" aria-label="Categorias do cardápio">
+      <div class="container">
+        <div class="category-nav-scroll">
+          <a href="#hamburgueres" class="category-nav-btn active">Hambúrgueres</a>
+          <a href="#combos" class="category-nav-btn">Combos</a>
+          <a href="#acompanhamentos" class="category-nav-btn">Acompanhamentos</a>
+          <a href="#bebidas" class="category-nav-btn">Bebidas</a>
+          <a href="#sobremesa" class="category-nav-btn">Sobremesa</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- SEÇÃO: HAMBÚRGUERES (Fundo Off-white) -->
+    <section class="menu-category-section bg-offwhite" id="hamburgueres" aria-labelledby="title-hamburgueres">
+      <div class="container">
+        <!-- Cabeçalho da Seção -->
+        <div class="section-header-center" data-reveal>
+          <h2 class="section-title-dark" id="title-hamburgueres">
+            Hambúrgueres
+          </h2>
+          <div class="title-underline-mustard" aria-hidden="true"></div>
+        </div>
+
+        <!-- Grade de 6 Cards de Hambúrgueres -->
+        <div class="menu-grid">
+          <!-- 1) Classic Chapa -->
+          <article class="burger-card" data-reveal>
+            <div class="card-media">
+              <img src="assets/images/burger-classic-chapa.jpg"
+                alt="Classic Chapa: dois smashs de 90g, cheddar, picles, cebola caramelizada e molho da casa no pão brioche"
+                class="card-img" width="800" height="1000" loading="lazy">
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Classic Chapa</h3>
+              <p class="card-desc">
+                Dois smashs de 90g, cheddar, picles, cebola e molho da casa no pão brioche.
+              </p>
+              <div class="card-footer">
+                <div class="card-price-box">
+                  <span class="card-price-label">Preço</span>
+                  <span class="card-price-tomato">R$ 28</span>
+                </div>
+                <a href="https://wa.me/5521999999999?text=Ol%C3%A1!%20Quero%20pedir%20o%20Classic%20Chapa"
+                  target="_blank" rel="noopener noreferrer" class="btn-card-order"
+                  aria-label="Pedir Classic Chapa pelo WhatsApp">
+                  Pedir
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 2) Cheddar Bacon -->
+          <article class="burger-card delay-1" data-reveal>
+            <div class="card-media">
+              <img src="assets/images/burger-cheddar-bacon.jpg"
+                alt="Cheddar Bacon: dois smashs, cheddar cremoso, fatias de bacon crocante e cebola crispy"
+                class="card-img" width="800" height="1000" loading="lazy">
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Cheddar Bacon</h3>
+              <p class="card-desc">
+                Dois smashs, cheddar cremoso, bacon crocante e cebola crispy.
+              </p>
+              <div class="card-footer">
+                <div class="card-price-box">
+                  <span class="card-price-label">Preço</span>
+                  <span class="card-price-tomato">R$ 34</span>
+                </div>
+                <a href="https://wa.me/5521999999999?text=Ol%C3%A1!%20Quero%20pedir%20o%20Cheddar%20Bacon"
+                  target="_blank" rel="noopener noreferrer" class="btn-card-order"
+                  aria-label="Pedir Cheddar Bacon pelo WhatsApp">
+                  Pedir
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 3) Carioca Burger -->
+          <article class="burger-card delay-2" data-reveal>
+            <div class="card-media">
+              <img src="assets/images/burger-carioca.jpg"
+                alt="Carioca Burger: blend bovino de 160g, queijo coalho grelhado, bacon, alface e geleia de pimenta"
+                class="card-img" width="800" height="1000" loading="lazy">
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Carioca Burger</h3>
+              <p class="card-desc">
+                Blend de 160g, queijo coalho grelhado, bacon, alface e geleia de pimenta.
+              </p>
+              <div class="card-footer">
+                <div class="card-price-box">
+                  <span class="card-price-label">Preço</span>
+                  <span class="card-price-tomato">R$ 36</span>
+                </div>
+                <a href="https://wa.me/5521999999999?text=Ol%C3%A1!%20Quero%20pedir%20o%20Carioca%20Burger"
+                  target="_blank" rel="noopener noreferrer" class="btn-card-order"
+                  aria-label="Pedir Carioca Burger pelo WhatsApp">
+                  Pedir
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 4) Fogo Alto (Selo Apimentado) -->
+          <article class="burger-card" data-reveal>
+            <div class="card-media">
+              <span class="badge-spicy">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M12 23c-4.97 0-9-4.03-9-9 0-4.06 2.71-7.5 6.55-8.59.39-.11.77.16.82.56.05.35-.15.69-.47.81C7.3 7.8 5 10.64 5 14c0 3.86 3.14 7 7 7s7-3.14 7-7c0-2.82-1.63-5.35-4.14-6.44-.33-.14-.49-.51-.37-.84.12-.34.49-.5.83-.38C18.49 7.64 21 10.6 21 14c0 4.97-4.03 9-9 9z" />
+                </svg>
+                Apimentado
+              </span>
+              <img src="assets/images/burger-fogo-alto.jpg"
+                alt="Fogo Alto: dois smashs, queijo pepper jack derretido, jalapeños fatiados e maionese de chipotle"
+                class="card-img" width="800" height="1000" loading="lazy">
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Fogo Alto</h3>
+              <p class="card-desc">
+                Dois smashs, pepper jack, jalapeño e maionese de chipotle.
+              </p>
+              <div class="card-footer">
+                <div class="card-price-box">
+                  <span class="card-price-label">Preço</span>
+                  <span class="card-price-tomato">R$ 35</span>
+                </div>
+                <a href="https://wa.me/5521999999999?text=Ol%C3%A1!%20Quero%20pedir%20o%20Fogo%20Alto" target="_blank"
+                  rel="noopener noreferrer" class="btn-card-order" aria-label="Pedir Fogo Alto pelo WhatsApp">
+                  Pedir
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 5) Duplo Blue -->
+          <article class="burger-card delay-1" data-reveal>
+            <div class="card-media">
+              <img src="assets/images/burger-duplo-blue.jpg"
+                alt="Duplo Blue: dois smashs bovinos, queijo gorgonzola cremoso, cebola caramelizada e folhas de rúcula"
+                class="card-img" width="800" height="1000" loading="lazy">
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Duplo Blue</h3>
+              <p class="card-desc">
+                Dois smashs, gorgonzola, cebola caramelizada e rúcula.
+              </p>
+              <div class="card-footer">
+                <div class="card-price-box">
+                  <span class="card-price-label">Preço</span>
+                  <span class="card-price-tomato">R$ 38</span>
+                </div>
+                <a href="https://wa.me/5521999999999?text=Ol%C3%A1!%20Quero%20pedir%20o%20Duplo%20Blue" target="_blank"
+                  rel="noopener noreferrer" class="btn-card-order" aria-label="Pedir Duplo Blue pelo WhatsApp">
+                  Pedir
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 6) Veggie Horta (Selo Vegetariano) -->
+          <article class="burger-card delay-2" data-reveal>
+            <div class="card-media">
+              <span class="badge-veggie">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M17 8C8 10 5.9 16.17 3.82 21.34L5.71 22l1-2.3A9.83 9.83 0 0 0 17 8zm-7.6 10.3A12.3 12.3 0 0 1 12 11c2.14 0 4 .86 5.3 2.27A17.9 17.9 0 0 0 9.4 18.3z" />
+                </svg>
+                Vegetariano
+              </span>
+              <img src="assets/images/burger-veggie-horta.jpg"
+                alt="Veggie Horta: burger artesanal de grão-de-bico e legumes, queijo prato derretido, tomate, alface e maionese de ervas frescas"
+                class="card-img" width="800" height="1000" loading="lazy">
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Veggie Horta</h3>
+              <p class="card-desc">
+                Burger de grão-de-bico e legumes, queijo prato, tomate, alface e maionese de ervas.
+              </p>
+              <div class="card-footer">
+                <div class="card-price-box">
+                  <span class="card-price-label">Preço</span>
+                  <span class="card-price-tomato">R$ 32</span>
+                </div>
+                <a href="https://wa.me/5521999999999?text=Ol%C3%A1!%20Quero%20pedir%20o%20Veggie%20Horta"
+                  target="_blank" rel="noopener noreferrer" class="btn-card-order"
+                  aria-label="Pedir Veggie Horta pelo WhatsApp">
+                  Pedir
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO: COMBOS (Fundo Preto Carvão - Formato Horizontal) -->
+    <section class="menu-category-section bg-charcoal" id="combos" aria-labelledby="title-combos">
+      <div class="container">
+        <!-- Cabeçalho da Seção -->
+        <div class="section-header-center" data-reveal>
+          <h2 class="section-title-dark" id="title-combos" style="color: var(--color-offwhite);">
+            Combos
+          </h2>
+          <div class="title-underline-mustard" aria-hidden="true"></div>
+        </div>
+
+        <!-- Grade Vertical de Cards Horizontais -->
+        <div class="combos-grid">
+          <!-- 7) Combo Clássico -->
+          <article class="combo-card-horizontal" data-reveal>
+            <div class="combo-media">
+              <img src="assets/images/combo-classico.jpg"
+                alt="Combo Clássico: burger Classic Chapa com batata frita rústica crocante e refrigerante gelado servidos em bandeja"
+                class="combo-img" width="800" height="800" loading="lazy">
+            </div>
+            <div class="combo-body">
+              <div class="combo-header">
+                <h3 class="combo-title">Combo Clássico</h3>
+                <p class="combo-desc">
+                  Classic Chapa + batata rústica + refrigerante lata.
+                </p>
+              </div>
+              <div class="card-footer" style="border-top-color: rgba(255, 255, 255, 0.08);">
+                <div class="card-price-box">
+                  <span class="card-price-label" style="color: var(--color-offwhite-muted);">Preço do Combo</span>
+                  <span class="card-price-tomato">R$ 42</span>
+                </div>
+                <a href="https://wa.me/5521999999999?text=Ol%C3%A1!%20Quero%20pedir%20o%20Combo%20Cl%C3%A1ssico"
+                  target="_blank" rel="noopener noreferrer" class="btn-card-order"
+                  aria-label="Pedir Combo Clássico pelo WhatsApp">
+                  Pedir
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 8) Combo Dupla (Selo Para Dividir) -->
+          <article class="combo-card-horizontal delay-1" data-reveal>
+            <div class="combo-media">
+              <span class="badge-share">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z" />
+                </svg>
+                Para dividir
+              </span>
+              <img src="assets/images/combo-dupla.jpg"
+                alt="Combo Dupla: dois smash burgers artesanais à escolha, porção generosa de batata frita e dois refrigerantes gelados"
+                class="combo-img" width="800" height="800" loading="lazy">
+            </div>
+            <div class="combo-body">
+              <div class="combo-header">
+                <h3 class="combo-title">Combo Dupla</h3>
+                <p class="combo-desc">
+                  2 burgers à escolha + batata grande + 2 refrigerantes.
+                </p>
+              </div>
+              <div class="card-footer" style="border-top-color: rgba(255, 255, 255, 0.08);">
+                <div class="card-price-box">
+                  <span class="card-price-label" style="color: var(--color-offwhite-muted);">Preço do Combo</span>
+                  <span class="card-price-tomato">R$ 89</span>
+                </div>
+                <a href="https://wa.me/5521999999999?text=Ol%C3%A1!%20Quero%20pedir%20o%20Combo%20Dupla" target="_blank"
+                  rel="noopener noreferrer" class="btn-card-order" aria-label="Pedir Combo Dupla pelo WhatsApp">
+                  Pedir
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 9) Combo Fogo -->
+          <article class="combo-card-horizontal delay-2" data-reveal>
+            <div class="combo-media">
+              <img src="assets/images/combo-fogo.jpg"
+                alt="Combo Fogo: burger picante Fogo Alto com anéis de cebola dourados e refrigerante lata gelado"
+                class="combo-img" width="800" height="800" loading="lazy">
+            </div>
+            <div class="combo-body">
+              <div class="combo-header">
+                <h3 class="combo-title">Combo Fogo</h3>
+                <p class="combo-desc">
+                  Fogo Alto + onion rings + refrigerante lata.
+                </p>
+              </div>
+              <div class="card-footer" style="border-top-color: rgba(255, 255, 255, 0.08);">
+                <div class="card-price-box">
+                  <span class="card-price-label" style="color: var(--color-offwhite-muted);">Preço do Combo</span>
+                  <span class="card-price-tomato">R$ 52</span>
+                </div>
+                <a href="https://wa.me/5521999999999?text=Ol%C3%A1!%20Quero%20pedir%20o%20Combo%20Fogo" target="_blank"
+                  rel="noopener noreferrer" class="btn-card-order" aria-label="Pedir Combo Fogo pelo WhatsApp">
+                  Pedir
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO: ACOMPANHAMENTOS (Fundo Off-white) -->
+    <section class="menu-category-section bg-offwhite" id="acompanhamentos" aria-labelledby="title-acompanhamentos">
+      <div class="container">
+        <!-- Cabeçalho da Seção -->
+        <div class="section-header-center" data-reveal>
+          <h2 class="section-title-dark" id="title-acompanhamentos">
+            Acompanhamentos
+          </h2>
+          <div class="title-underline-mustard" aria-hidden="true"></div>
+        </div>
+
+        <!-- Grade de 2 Cards de Acompanhamentos (Imagem 1:1) -->
+        <div class="sides-grid">
+          <!-- 10) Batata Rústica -->
+          <article class="burger-card" data-reveal>
+            <div class="card-media aspect-square">
+              <img src="assets/images/acompanhamento-batata-rustica.jpg"
+                alt="Batata Rústica: batatas com casca temperadas com alho e ervas servidas em cesta rústica"
+                class="card-img" width="800" height="800" loading="lazy">
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Batata Rústica</h3>
+              <p class="card-desc">
+                Com casca, temperada com alho e ervas.
+              </p>
+              <div class="card-footer">
+                <div class="card-price-box">
+                  <span class="card-price-label">Preço</span>
+                  <span class="card-price-tomato">R$ 18</span>
+                </div>
+                <a href="https://wa.me/5521999999999?text=Ol%C3%A1!%20Quero%20pedir%20a%20Batata%20R%C3%BAstica"
+                  target="_blank" rel="noopener noreferrer" class="btn-card-order"
+                  aria-label="Pedir Batata Rústica pelo WhatsApp">
+                  Pedir
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 11) Onion Rings -->
+          <article class="burger-card delay-1" data-reveal>
+            <div class="card-media aspect-square">
+              <img src="assets/images/acompanhamento-onion-rings.jpg"
+                alt="Onion Rings: anéis de cebola dourados empanados e crocantes acompanhados de molho barbecue"
+                class="card-img" width="800" height="800" loading="lazy">
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Onion Rings</h3>
+              <p class="card-desc">
+                Anéis de cebola empanados e crocantes, com molho barbecue.
+              </p>
+              <div class="card-footer">
+                <div class="card-price-box">
+                  <span class="card-price-label">Preço</span>
+                  <span class="card-price-tomato">R$ 20</span>
+                </div>
+                <a href="https://wa.me/5521999999999?text=Ol%C3%A1!%20Quero%20pedir%20os%20Onion%20Rings"
+                  target="_blank" rel="noopener noreferrer" class="btn-card-order"
+                  aria-label="Pedir Onion Rings pelo WhatsApp">
+                  Pedir
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO: BEBIDAS (Fundo Amarelo Mostarda Claro) -->
+    <section class="menu-category-section bg-mustard-light" id="bebidas" aria-labelledby="title-bebidas">
+      <div class="container">
+        <!-- Cabeçalho da Seção -->
+        <div class="section-header-center" data-reveal>
+          <h2 class="section-title-dark" id="title-bebidas">
+            Bebidas
+          </h2>
+          <div class="title-underline-mustard" aria-hidden="true"></div>
+        </div>
+
+        <!-- Grade de 3 Cards de Bebidas (Imagem 1:1) -->
+        <div class="menu-grid">
+          <!-- 12) Refrigerante lata -->
+          <article class="burger-card" data-reveal>
+            <div class="card-media aspect-square">
+              <img src="assets/images/bebida-refrigerante-lata.jpg"
+                alt="Refrigerante lata gelado com gotas de condensação e cubos de gelo" class="card-img" width="800"
+                height="800" loading="lazy">
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Refrigerante lata</h3>
+              <p class="card-desc">
+                Coca-Cola, Guaraná ou Sprite.
+              </p>
+              <div class="card-footer">
+                <div class="card-price-box">
+                  <span class="card-price-label">Preço</span>
+                  <span class="card-price-tomato">R$ 7</span>
+                </div>
+                <a href="https://wa.me/5521999999999?text=Ol%C3%A1!%20Quero%20pedir%20o%20Refrigerante%20lata"
+                  target="_blank" rel="noopener noreferrer" class="btn-card-order"
+                  aria-label="Pedir Refrigerante lata pelo WhatsApp">
+                  Pedir
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 13) Limonada Suíça -->
+          <article class="burger-card delay-1" data-reveal>
+            <div class="card-media aspect-square">
+              <img src="assets/images/bebida-limonada-suica.jpg"
+                alt="Limonada Suíça cremosa servida em copo alto com rodelas de limão e folhas de hortelã"
+                class="card-img" width="800" height="800" loading="lazy">
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Limonada Suíça</h3>
+              <p class="card-desc">
+                Feita na hora, gelada e cremosa.
+              </p>
+              <div class="card-footer">
+                <div class="card-price-box">
+                  <span class="card-price-label">Preço</span>
+                  <span class="card-price-tomato">R$ 12</span>
+                </div>
+                <a href="https://wa.me/5521999999999?text=Ol%C3%A1!%20Quero%20pedir%20a%20Limonada%20Su%C3%AD%C3%A7a"
+                  target="_blank" rel="noopener noreferrer" class="btn-card-order"
+                  aria-label="Pedir Limonada Suíça pelo WhatsApp">
+                  Pedir
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 14) Milkshake de Doce de Leite -->
+          <article class="burger-card delay-2" data-reveal>
+            <div class="card-media aspect-square">
+              <img src="assets/images/bebida-milkshake-doce-de-leite.jpg"
+                alt="Milkshake encorpado de doce de leite com chantilly generoso e calda de caramelo" class="card-img"
+                width="800" height="800" loading="lazy">
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Milkshake de Doce de Leite</h3>
+              <p class="card-desc">
+                Sorvete de creme, doce de leite e chantilly.
+              </p>
+              <div class="card-footer">
+                <div class="card-price-box">
+                  <span class="card-price-label">Preço</span>
+                  <span class="card-price-tomato">R$ 22</span>
+                </div>
+                <a href="https://wa.me/5521999999999?text=Ol%C3%A1!%20Quero%20pedir%20o%20Milkshake%20de%20Doce%20de%20Leite"
+                  target="_blank" rel="noopener noreferrer" class="btn-card-order"
+                  aria-label="Pedir Milkshake de Doce de Leite pelo WhatsApp">
+                  Pedir
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO: SOBREMESA (Fundo Preto Carvão - Card Único em Destaque) -->
+    <section class="menu-category-section bg-charcoal" id="sobremesa" aria-labelledby="title-sobremesa">
+      <div class="container">
+        <!-- Cabeçalho da Seção -->
+        <div class="section-header-center" data-reveal>
+          <h2 class="section-title-dark" id="title-sobremesa" style="color: var(--color-offwhite);">
+            Sobremesa
+          </h2>
+          <div class="title-underline-mustard" aria-hidden="true"></div>
+        </div>
+
+        <!-- Card Único em Destaque (4:3) -->
+        <article class="dessert-card-feature" data-reveal>
+          <div class="dessert-media">
+            <img src="assets/images/sobremesa-brownie.jpg"
+              alt="Brownie com Sorvete: brownie quentinho de chocolate com bola de sorvete de creme e calda artesanal de chocolate servido na chapa"
+              class="dessert-img" width="1000" height="750" loading="lazy">
+          </div>
+          <div class="dessert-body">
+            <div class="dessert-header">
+              <h3 class="dessert-title">Brownie com Sorvete</h3>
+              <p class="dessert-desc">
+                Brownie quentinho de chocolate com bola de sorvete de creme e calda.
+              </p>
+            </div>
+            <div class="card-footer" style="border-top-color: rgba(255, 255, 255, 0.08);">
+              <div class="card-price-box">
+                <span class="card-price-label" style="color: var(--color-offwhite-muted);">Preço</span>
+                <span class="card-price-tomato">R$ 18</span>
+              </div>
+              <a href="https://wa.me/5521999999999?text=Ol%C3%A1!%20Quero%20pedir%20o%20Brownie%20com%20Sorvete"
+                target="_blank" rel="noopener noreferrer" class="btn-card-order"
+                aria-label="Pedir Brownie com Sorvete pelo WhatsApp">
+                Pedir
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- FAIXA FINAL: CTA VERMELHO TOMATE -->
+    <section class="menu-bottom-banner" aria-label="Chamada final para pedido">
+      <div class="container">
+        <div class="menu-bottom-banner-content" data-reveal>
+          <h2 class="menu-bottom-banner-title">
+            Escolheu? A chapa está esperando.
+          </h2>
+          <a href="https://wa.me/5521999999999" target="_blank" rel="noopener noreferrer" class="btn-final-whatsapp"
+            aria-label="Pedir pelo WhatsApp">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67M9.04 7.42C8.88 7.42 8.63 7.48 8.41 7.72C8.19 7.96 7.58 8.53 7.58 9.68C7.58 10.84 8.43 11.95 8.55 12.11C8.67 12.27 10.2 14.62 12.53 15.63C13.09 15.87 13.51 16.01 13.85 16.12C14.41 16.3 14.92 16.27 15.32 16.21C15.77 16.14 16.7 15.65 16.89 15.11C17.08 14.57 17.08 14.11 17.02 14.01C16.96 13.92 16.81 13.86 16.58 13.75C16.35 13.63 15.24 13.09 15.03 13.01C14.83 12.94 14.68 12.9 14.53 13.13C14.38 13.36 13.95 13.86 13.82 14.01C13.69 14.16 13.57 14.18 13.34 14.07C13.11 13.95 12.38 13.71 11.51 12.94C10.83 12.34 10.37 11.59 10.25 11.36C10.12 11.13 10.23 11.01 10.35 10.89C10.45 10.79 10.57 10.63 10.69 10.5C10.8 10.36 10.84 10.27 10.92 10.11C11 9.96 10.96 9.82 10.9 9.71C10.84 9.6 10.4 8.49 10.21 8.04C10.02 7.6 9.84 7.66 9.7 7.65C9.57 7.65 9.42 7.65 9.27 7.65L9.04 7.42Z" />
+            </svg>
+            Pedir pelo WhatsApp
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- RODAPÉ DO SITE -->
+  <footer class="site-footer" id="rodape">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Coluna 1: Logo e Tagline -->
+        <div class="footer-brand-col">
+          <a href="index.html" aria-label="Chapa Quente Burger Co. - Início">
+            <img src="assets/images/Logo.png" alt="Logo Chapa Quente Burger Co." class="footer-logo-img" width="210"
+              height="48" loading="lazy">
+          </a>
+          <p class="footer-tagline">
+            "Smash na chapa, sabor sem pressa."
+          </p>
+        </div>
+
+        <!-- Coluna 2: Navegação -->
+        <div class="footer-nav-col">
+          <h3 class="footer-col-title">Navegação</h3>
+          <ul class="footer-links-list">
+            <li><a href="index.html" class="footer-link">Início</a></li>
+            <li><a href="index.html#sobre" class="footer-link">Sobre</a></li>
+            <li><a href="cardapio.html" class="footer-link">Cardápio</a></li>
+            <li>
+              <a href="https://wa.me/5521999999999" target="_blank" rel="noopener noreferrer"
+                class="footer-link footer-link-highlight">
+                Pedir pelo WhatsApp
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Coluna 3: Contato & Redes -->
+        <div class="footer-contact-col">
+          <h3 class="footer-col-title">Contato</h3>
+          <p class="footer-contact-text">
+            <span class="footer-contact-highlight">Endereço:</span><br>
+            Rua das Palmeiras, 123, Rio de Janeiro, RJ
+          </p>
+          <p class="footer-contact-text">
+            <span class="footer-contact-highlight">Horários:</span><br>
+            Ter a Qui: 18h às 23h | Sex a Dom: 12h às 00h
+          </p>
+          <!-- Ícones Redes Sociais e Delivery -->
+          <div class="footer-social-row" aria-label="Canais e redes sociais">
+            <!-- Instagram -->
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn"
+              aria-label="Siga-nos no Instagram">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+              </svg>
+            </a>
+            <!-- WhatsApp -->
+            <a href="https://wa.me/5521999999999" target="_blank" rel="noopener noreferrer" class="footer-social-btn"
+              aria-label="Fale conosco no WhatsApp">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67M9.04 7.42C8.88 7.42 8.63 7.48 8.41 7.72C8.19 7.96 7.58 8.53 7.58 9.68C7.58 10.84 8.43 11.95 8.55 12.11C8.67 12.27 10.2 14.62 12.53 15.63C13.09 15.87 13.51 16.01 13.85 16.12C14.41 16.3 14.92 16.27 15.32 16.21C15.77 16.14 16.7 15.65 16.89 15.11C17.08 14.57 17.08 14.11 17.02 14.01C16.96 13.92 16.81 13.86 16.58 13.75C16.35 13.63 15.24 13.09 15.03 13.01C14.83 12.94 14.68 12.9 14.53 13.13C14.38 13.36 13.95 13.86 13.82 14.01C13.69 14.16 13.57 14.18 13.34 14.07C13.11 13.95 12.38 13.71 11.51 12.94C10.83 12.34 10.37 11.59 10.25 11.36C10.12 11.13 10.23 11.01 10.35 10.89C10.45 10.79 10.57 10.63 10.69 10.5C10.8 10.36 10.84 10.27 10.92 10.11C11 9.96 10.96 9.82 10.9 9.71C10.84 9.6 10.4 8.49 10.21 8.04C10.02 7.6 9.84 7.66 9.7 7.65C9.57 7.65 9.42 7.65 9.27 7.65L9.04 7.42Z" />
+              </svg>
+            </a>
+            <!-- Delivery / Pedidos -->
+            <a href="https://wa.me/5521999999999" target="_blank" rel="noopener noreferrer" class="footer-social-btn"
+              aria-label="Peça seu Delivery">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M19 7h-3V6a4 4 0 0 0-8 0v1H5a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm-9-1a2 2 0 0 1 4 0v1h-4V6zm9 14H5V9h14v11z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Faixa Inferior de Direitos -->
+    <div class="footer-bottom">
+      <div class="container">
+        <p class="footer-copyright">
+          Chapa Quente Burger Co. © 2026. Todos os direitos reservados. Desenvolvido por <strong
+            class="developer-credit">Web em Vista</strong>. Site fictício para fins de demonstração.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botão Flutuante de WhatsApp -->
+  <a href="https://wa.me/5521999999999" target="_blank" rel="noopener noreferrer" class="whatsapp-floating"
+    aria-label="Fale conosco pelo WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path
+        d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67M9.04 7.42C8.88 7.42 8.63 7.48 8.41 7.72C8.19 7.96 7.58 8.53 7.58 9.68C7.58 10.84 8.43 11.95 8.55 12.11C8.67 12.27 10.2 14.62 12.53 15.63C13.09 15.87 13.51 16.01 13.85 16.12C14.41 16.3 14.92 16.27 15.32 16.21C15.77 16.14 16.7 15.65 16.89 15.11C17.08 14.57 17.08 14.11 17.02 14.01C16.96 13.92 16.81 13.86 16.58 13.75C16.35 13.63 15.24 13.09 15.03 13.01C14.83 12.94 14.68 12.9 14.53 13.13C14.38 13.36 13.95 13.86 13.82 14.01C13.69 14.16 13.57 14.18 13.34 14.07C13.11 13.95 12.38 13.71 11.51 12.94C10.83 12.34 10.37 11.59 10.25 11.36C10.12 11.13 10.23 11.01 10.35 10.89C10.45 10.79 10.57 10.63 10.69 10.5C10.8 10.36 10.84 10.27 10.92 10.11C11 9.96 10.96 9.82 10.9 9.71C10.84 9.6 10.4 8.49 10.21 8.04C10.02 7.6 9.84 7.66 9.7 7.65C9.57 7.65 9.42 7.65 9.27 7.65L9.04 7.42Z" />
+    </svg>
+  </a>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>

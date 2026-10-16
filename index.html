@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chapa Quente Burger Co. | Smash na chapa, sabor sem pressa - Rio de Janeiro</title>
+  <meta name="description"
+    content="Hamburgueria artesanal no Rio de Janeiro. Smash burgers na chapa bem quente, crocantes por fora, suculentos por dentro e feitos na hora. Peça já pelo WhatsApp!">
+  <link rel="canonical" href="https://chapaquenteburger.com.br/">
+
+  <!-- Open Graph / Redes Sociais -->
+  <meta property="og:type" content="restaurant">
+  <meta property="og:title" content="Chapa Quente Burger Co. - Rio de Janeiro">
+  <meta property="og:description"
+    content="Smash na chapa, sabor sem pressa. Burgers artesanais de verdade no Rio de Janeiro.">
+  <meta property="og:image" content="assets/images/Logo.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/Logo.png">
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Schema.org - Restaurant -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Chapa Quente Burger Co.",
+    "image": "assets/images/Logo.png",
+    "description": "Hamburgueria artesanal de bairro moderna no Rio de Janeiro especializada em smash burgers crocantes e artesanais.",
+    "servesCuisine": ["Burgers", "Smash Burgers", "Hamburgueria Artesanal", "Comida de Rua Americana"],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Rio de Janeiro",
+      "addressRegion": "RJ",
+      "addressCountry": "BR"
+    },
+    "telephone": "+55-21-99999-9999",
+    "url": "https://chapaquenteburger.com.br",
+    "priceRange": "$$"
+  }
+  </script>
+</head>
+
+<body>
+
+  <!-- Cabeçalho Fixo -->
+  <header class="site-header" id="site-header">
+    <div class="container header-container">
+      <!-- Logo Oficial à Esquerda -->
+      <a href="index.html" class="brand-link" aria-label="Chapa Quente Burger Co. - Página Inicial">
+        <img src="assets/images/Logo.png" alt="Chapa Quente Burger Co. - Smash na chapa, sabor sem pressa"
+          class="brand-logo-img" width="210" height="48">
+      </a>
+
+      <!-- Menu Desktop Centro/Direita -->
+      <nav class="desktop-nav" aria-label="Navegação principal">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link active">Início</a></li>
+          <li><a href="#sobre" class="nav-link">Sobre</a></li>
+          <li><a href="cardapio.html" class="nav-link">Cardápio</a></li>
+        </ul>
+        <!-- Botão Pedir Agora (Extrema Direita) -->
+        <a href="https://wa.me/5521999999999" target="_blank" rel="noopener noreferrer" class="btn-header-order"
+          aria-label="Pedir agora pelo WhatsApp">
+          Pedir agora
+        </a>
+      </nav>
+
+      <!-- Botão Hambúrguer Mobile (Trocadilho visual: pão, carne, pão) -->
+      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu de navegação" aria-expanded="false"
+        aria-controls="mobile-overlay">
+        <span class="bun-top"></span>
+        <span class="patty"></span>
+        <span class="bun-bottom"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Menu Mobile Fullscreen Overlay -->
+  <div class="mobile-overlay" id="mobile-overlay" aria-hidden="true">
+    <nav aria-label="Navegação móvel">
+      <ul class="mobile-nav-links">
+        <li><a href="index.html" class="mobile-nav-link active">Início</a></li>
+        <li><a href="#sobre" class="mobile-nav-link">Sobre</a></li>
+        <li><a href="cardapio.html" class="mobile-nav-link">Cardápio</a></li>
+      </ul>
+    </nav>
+    <div class="mobile-cta-box">
+      <p class="mobile-tagline">"Smash na chapa, sabor sem pressa."</p>
+      <a href="https://wa.me/5521999999999" target="_blank" rel="noopener noreferrer" class="btn-mobile-order">
+        🔥 Pedir agora no WhatsApp
+      </a>
+    </div>
+  </div>
+
+  <!-- Conteúdo Principal -->
+  <main id="main-content">
+    <!-- SEÇÃO HERO -->
+    <section class="hero-section" id="hero" aria-label="Apresentação Chapa Quente Burger Co.">
+      <!-- Imagem de Fundo Responsiva (Desktop 16:9 / Mobile 9:16) -->
+      <picture class="hero-bg-container">
+        <source media="(max-width: 768px)" srcset="assets/images/hero-mobile.jpg" width="1080" height="1920">
+        <img src="assets/images/hero-desktop.jpg"
+          alt="Dois smash burgers artesanais sendo prensados com espátula na chapa de ferro quente com labaredas e fumaça"
+          class="hero-bg-img" width="1920" height="1080" fetchpriority="high">
+      </picture>
+
+      <!-- Overlay 55% para contraste e legibilidade perfeita -->
+      <div class="hero-overlay" aria-hidden="true"></div>
+
+      <div class="container hero-container">
+        <div class="hero-content">
+          <!-- Selo / Tag Artesanal -->
+          <div class="hero-badge" data-reveal>
+            <span class="hero-badge-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M12 23c-4.97 0-9-4.03-9-9 0-4.06 2.71-7.5 6.55-8.59.39-.11.77.16.82.56.05.35-.15.69-.47.81C7.3 7.8 5 10.64 5 14c0 3.86 3.14 7 7 7s7-3.14 7-7c0-2.82-1.63-5.35-4.14-6.44-.33-.14-.49-.51-.37-.84.12-.34.49-.5.83-.38C18.49 7.64 21 10.6 21 14c0 4.97-4.03 9-9 9z" />
+              </svg>
+            </span>
+            <span class="hero-badge-text">
+              Hamburgueria artesanal <span class="badge-separator">•</span> Rio de Janeiro
+            </span>
+          </div>
+
+          <!-- H1 Único da Página -->
+          <h1 class="hero-title delay-1" data-reveal>
+            Smash na <span class="text-mustard">chapa</span>, sabor sem pressa.
+          </h1>
+
+          <!-- Subtítulo -->
+          <p class="hero-subtitle delay-2" data-reveal>
+            Blend selecionado, pão macio e aquela crostinha que só a chapa bem quente dá. Feito na hora, do jeito que
+            hambúrguer bom tem que ser.
+          </p>
+
+          <!-- Dois Botões de Ação -->
+          <div class="hero-cta-group delay-3" data-reveal>
+            <a href="cardapio.html" class="btn btn-mustard" id="hero-btn-menu">
+              Ver cardápio
+            </a>
+            <a href="https://wa.me/5521999999999" target="_blank" rel="noopener noreferrer"
+              class="btn btn-outline-offwhite" id="hero-btn-whatsapp">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"
+                style="margin-right: 2px;">
+                <path
+                  d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67M9.04 7.42C8.88 7.42 8.63 7.48 8.41 7.72C8.19 7.96 7.58 8.53 7.58 9.68C7.58 10.84 8.43 11.95 8.55 12.11C8.67 12.27 10.2 14.62 12.53 15.63C13.09 15.87 13.51 16.01 13.85 16.12C14.41 16.3 14.92 16.27 15.32 16.21C15.77 16.14 16.7 15.65 16.89 15.11C17.08 14.57 17.08 14.11 17.02 14.01C16.96 13.92 16.81 13.86 16.58 13.75C16.35 13.63 15.24 13.09 15.03 13.01C14.83 12.94 14.68 12.9 14.53 13.13C14.38 13.36 13.95 13.86 13.82 14.01C13.69 14.16 13.57 14.18 13.34 14.07C13.11 13.95 12.38 13.71 11.51 12.94C10.83 12.34 10.37 11.59 10.25 11.36C10.12 11.13 10.23 11.01 10.35 10.89C10.45 10.79 10.57 10.63 10.69 10.5C10.8 10.36 10.84 10.27 10.92 10.11C11 9.96 10.96 9.82 10.9 9.71C10.84 9.6 10.4 8.49 10.21 8.04C10.02 7.6 9.84 7.66 9.7 7.65C9.57 7.65 9.42 7.65 9.27 7.65L9.04 7.42Z" />
+              </svg>
+              Pedir pelo WhatsApp
+            </a>
+          </div>
+
+          <!-- Três Mini-Informações com Ícones -->
+          <div class="hero-features delay-4" data-reveal>
+            <div class="hero-feature-item">
+              <span class="hero-feature-icon" aria-hidden="true">
+                <!-- Ícone Fogo / Feito na hora -->
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M12 23c-4.97 0-9-4.03-9-9 0-4.06 2.71-7.5 6.55-8.59.39-.11.77.16.82.56.05.35-.15.69-.47.81C7.3 7.8 5 10.64 5 14c0 3.86 3.14 7 7 7s7-3.14 7-7c0-2.82-1.63-5.35-4.14-6.44-.33-.14-.49-.51-.37-.84.12-.34.49-.5.83-.38C18.49 7.64 21 10.6 21 14c0 4.97-4.03 9-9 9zm.5-13.5c-.28 0-.5-.22-.5-.5v-4c0-.28.22-.5.5-.5s.5.22.5.5v4c0 .28-.22.5-.5.5z" />
+                </svg>
+              </span>
+              <span>Feito na hora</span>
+            </div>
+
+            <div class="hero-feature-item">
+              <span class="hero-feature-icon" aria-hidden="true">
+                <!-- Ícone Blend Próprio / Selo de qualidade -->
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z" />
+                </svg>
+              </span>
+              <span>Blend próprio</span>
+            </div>
+
+            <div class="hero-feature-item">
+              <span class="hero-feature-icon" aria-hidden="true">
+                <!-- Ícone Delivery & Retirada -->
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M19 7h-3V6a4 4 0 0 0-8 0v1H5a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm-9-1a2 2 0 0 1 4 0v1h-4V6zm9 14H5V9h14v11z" />
+                </svg>
+              </span>
+              <span>Delivery e retirada</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO: OS QUERIDINHOS DA CASA (Fundo Off-white) -->
+    <section class="favorites-section" id="queridinhos" aria-labelledby="favorites-title">
+      <div class="container">
+        <!-- Cabeçalho da Seção -->
+        <div class="section-header-center" data-reveal>
+          <h2 class="section-title-dark" id="favorites-title">
+            Os queridinhos da casa
+          </h2>
+          <div class="title-underline-mustard" aria-hidden="true"></div>
+        </div>
+
+        <!-- Grid com 3 Cards de Produtos -->
+        <div class="cards-grid">
+          <!-- Card 1: Classic Chapa (Com Selo Mais Pedido) -->
+          <article class="burger-card" data-reveal>
+            <div class="card-media">
+              <span class="badge-popular">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                </svg>
+                Mais pedido
+              </span>
+              <img src="assets/images/burger-classic-chapa.jpg"
+                alt="Classic Chapa: burger artesanal duplo com cheddar derretido, cebola caramelizada e picles no pão brioche"
+                class="card-img" width="800" height="1000" loading="lazy">
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Classic Chapa</h3>
+              <p class="card-desc">
+                Dois smashs, cheddar derretido, picles e o molho da casa. O clássico que nunca erra.
+              </p>
+              <div class="card-footer">
+                <div class="card-price-box">
+                  <span class="card-price-label">Preço</span>
+                  <span class="card-price">R$ 28</span>
+                </div>
+                <a href="https://wa.me/5521999999999?text=Ol%C3%A1!%20Gostaria%20de%20pedir%20o%20Classic%20Chapa."
+                  target="_blank" rel="noopener noreferrer" class="btn-card-order"
+                  aria-label="Pedir Classic Chapa pelo WhatsApp">
+                  Pedir
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2: Cheddar Bacon -->
+          <article class="burger-card delay-1" data-reveal>
+            <div class="card-media">
+              <img src="assets/images/burger-cheddar-bacon.jpg"
+                alt="Cheddar Bacon: smash duplo com fatias crocantes de bacon, cheddar cremoso escorrendo e cebola crispy"
+                class="card-img" width="800" height="1000" loading="lazy">
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Cheddar Bacon</h3>
+              <p class="card-desc">
+                Bacon crocante, cheddar cremoso e cebola crispy. Para quem gosta de ir fundo.
+              </p>
+              <div class="card-footer">
+                <div class="card-price-box">
+                  <span class="card-price-label">Preço</span>
+                  <span class="card-price">R$ 34</span>
+                </div>
+                <a href="https://wa.me/5521999999999?text=Ol%C3%A1!%20Gostaria%20de%20pedir%20o%20Cheddar%20Bacon."
+                  target="_blank" rel="noopener noreferrer" class="btn-card-order"
+                  aria-label="Pedir Cheddar Bacon pelo WhatsApp">
+                  Pedir
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3: Fogo Alto -->
+          <article class="burger-card delay-2" data-reveal>
+            <div class="card-media">
+              <img src="assets/images/burger-fogo-alto.jpg"
+                alt="Fogo Alto: smash picante com queijo pepper jack derretido, jalapeños fatiados e maionese de chipotle"
+                class="card-img" width="800" height="1000" loading="lazy">
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Fogo Alto</h3>
+              <p class="card-desc">
+                Jalapeño, pepper jack e maionese de chipotle. Pede uma limonada junto.
+              </p>
+              <div class="card-footer">
+                <div class="card-price-box">
+                  <span class="card-price-label">Preço</span>
+                  <span class="card-price">R$ 35</span>
+                </div>
+                <a href="https://wa.me/5521999999999?text=Ol%C3%A1!%20Gostaria%20de%20pedir%20o%20Fogo%20Alto."
+                  target="_blank" rel="noopener noreferrer" class="btn-card-order"
+                  aria-label="Pedir Fogo Alto pelo WhatsApp">
+                  Pedir
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Botão Centralizado Abaixo dos Cards -->
+        <div class="favorites-footer-cta" data-reveal>
+          <a href="cardapio.html" class="btn btn-full-menu" id="favorites-btn-full-menu">
+            Ver cardápio completo
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO: DIFERENCIAIS / CAPRICHO EM CADA CAMADA (Fundo Preto Carvão) -->
+    <section class="craft-section" id="diferenciais" aria-labelledby="craft-title">
+      <div class="container">
+        <div class="craft-grid">
+          <!-- Coluna Visual (Esquerda): Imagem 4:5 + Imagem 1:1 Sobreposta com Moldura Mostarda -->
+          <div class="craft-media-wrapper" data-reveal>
+            <!-- Imagem Principal (4:5) -->
+            <div class="craft-main-img-box">
+              <img src="assets/images/craft-assembly.jpg"
+                alt="Chef montando hambúrguer artesanal camada por camada na cozinha aberta com ingredientes frescos e luz dourada"
+                class="craft-main-img" width="900" height="1125" loading="lazy">
+            </div>
+            <!-- Imagem Secundária Sobreposta (1:1) com Moldura Mostarda -->
+            <div class="craft-secondary-img-box">
+              <img src="assets/images/craft-blend.jpg"
+                alt="Bolas de blend de carne bovina fresca sendo moldadas à mão na bancada de inox para smash na chapa"
+                class="craft-secondary-img" width="600" height="600" loading="lazy">
+            </div>
+          </div>
+
+          <!-- Coluna Conteúdo (Direita) -->
+          <div class="craft-content delay-1" data-reveal>
+            <h2 class="craft-title" id="craft-title">
+              Aqui tem <span class="text-mustard">capricho</span> em cada camada
+            </h2>
+
+            <div class="craft-list">
+              <!-- Diferencial 1 -->
+              <div class="craft-item">
+                <div class="craft-item-icon" aria-hidden="true">
+                  <!-- Ícone Blend Próprio / Carne Artesanal -->
+                  <svg viewBox="0 0 24 24">
+                    <path
+                      d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14.5v-9l6 4.5-6 4.5z" />
+                  </svg>
+                </div>
+                <div class="craft-item-text">
+                  <h3 class="craft-item-title">Blend próprio</h3>
+                  <p class="craft-item-desc">
+                    Mistura de cortes bovinos moída diariamente, sem congelar.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Diferencial 2 -->
+              <div class="craft-item">
+                <div class="craft-item-icon" aria-hidden="true">
+                  <!-- Ícone Pão Macio / Trigo / Tostado -->
+                  <svg viewBox="0 0 24 24">
+                    <path
+                      d="M12 3c-4.97 0-9 2.69-9 6v2c0 1.66 1.34 3 3 3h12c1.66 0 3-1.34 3-3V9c0-3.31-4.03-6-9-6zm-7 14h14v2c0 1.1-.9 2-2 2H7c-1.1 0-2-.9-2-2v-2z" />
+                  </svg>
+                </div>
+                <div class="craft-item-text">
+                  <h3 class="craft-item-title">Pão macio de verdade</h3>
+                  <p class="craft-item-desc">
+                    Tostado na manteiga na hora de montar.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Diferencial 3 -->
+              <div class="craft-item">
+                <div class="craft-item-icon" aria-hidden="true">
+                  <!-- Ícone Molhos da Casa / Chama / Sabor -->
+                  <svg viewBox="0 0 24 24">
+                    <path
+                      d="M12 2c1.1 0 2 .9 2 2v2.1c3.4.8 6 3.9 6 7.6 0 4.4-3.6 8-8 8s-8-3.6-8-8c0-3.7 2.6-6.8 6-7.6V4c0-1.1.9-2 2-2zm0 16c2.2 0 4-1.8 4-4 0-1.5-.8-2.8-2-3.5V11c0-.6-.4-1-1-1s-1 .4-1 1v1.5c-1.2.7-2 2-2 3.5 0 2.2 1.8 4 4 4z" />
+                  </svg>
+                </div>
+                <div class="craft-item-text">
+                  <h3 class="craft-item-title">Molhos da casa</h3>
+                  <p class="craft-item-desc">
+                    Receitas autorais, feitas todo dia na nossa cozinha.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO: SOBRE / NOSSA HISTÓRIA (Fundo Off-white) -->
+    <section class="about-section" id="sobre" aria-labelledby="about-title">
+      <div class="container">
+        <!-- Cabeçalho da Seção -->
+        <div class="section-header-center" data-reveal>
+          <span class="badge-tag-pill"
+            style="display: inline-block; background-color: var(--color-mustard); color: var(--color-charcoal); font-weight: 800; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.08em; padding: 6px 16px; border-radius: var(--border-radius-pill); margin-bottom: 12px;">
+            Nossa História
+          </span>
+          <h2 class="section-title-dark" id="about-title">
+            De onde vem a chapa quente
+          </h2>
+          <div class="title-underline-mustard" aria-hidden="true"></div>
+        </div>
+
+        <!-- Conteúdo em 2 Colunas -->
+        <div class="about-grid">
+          <!-- Coluna Visual: Imagem com Badge Flutuante -->
+          <div class="about-media-box" data-reveal>
+            <img src="assets/images/sobre-historia.jpg"
+              alt="Mestre chapeiro da Chapa Quente preparando burgers artesanais na chapa com chamas e fumaça"
+              class="about-img" width="1000" height="750" loading="lazy">
+            <div class="about-badge-floating">
+              <span>Desde 2021 • Rio de Janeiro</span>
+            </div>
+          </div>
+
+          <!-- Coluna Texto & Manifesto -->
+          <div class="about-text-content delay-1" data-reveal>
+            <p class="about-lead-paragraph">
+              A Chapa Quente nasceu de uma obsessão simples: fazer hambúrguer artesanal de verdade no Rio de Janeiro,
+              com crostinha crocante e sabor de respeito.
+            </p>
+            <p class="about-body-paragraph">
+              A gente cansou de fast-food sem alma e de lanches com gourmetização exagerada. Aqui a filosofia é outra:
+              chapa estalando de quente, blend fresco moído todo dia, pão macio selado na manteiga e queijo derretido no
+              ponto certo.
+            </p>
+            <p class="about-body-paragraph">
+              Cada lanche que sai do nosso balcão honra a clássica técnica smash. Sem atalhos, sem carne congelada.
+              Sabor de verdade, feito sem pressa.
+            </p>
+
+            <!-- 3 Mini-Indicadores de Confiança -->
+            <div class="about-pillars-grid">
+              <div class="about-pillar-card">
+                <div class="about-pillar-icon-box" aria-hidden="true">
+                  <!-- Ícone Corte Fresco / Blend Bovino Artesanal -->
+                  <svg viewBox="0 0 24 24">
+                    <path
+                      d="M19.4 6.34c-.78-.78-1.92-1.07-2.96-.77l-1.72.48c-.81.23-1.67.14-2.43-.25l-2.07-1.06c-1.74-.89-3.85-.62-5.3.69-1.8 1.64-2.47 3.97-1.74 6.08.57 1.64 1.84 2.94 3.46 3.53 1.02.37 1.87 1.1 2.41 2.05.9 1.58 2.5 2.6 4.31 2.74.24.02.48.03.72.03 1.93 0 3.73-.91 4.88-2.46l1.64-2.21c1.23-1.66 1.41-3.9.46-5.74l-.9-1.77c-.31-.61-.31-1.33.02-1.94l.2-.43zM10.5 14.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+                  </svg>
+                </div>
+                <h3 class="about-pillar-title">100% Fresco</h3>
+                <p class="about-pillar-desc">Carne moída diariamente na casa, nunca congelada.</p>
+              </div>
+              <div class="about-pillar-card">
+                <div class="about-pillar-icon-box" aria-hidden="true">
+                  <!-- Ícone Chapa Quente / Fogo Smash Raiz -->
+                  <svg viewBox="0 0 24 24">
+                    <path
+                      d="M12 12.9c-.83 0-1.5.67-1.5 1.5 0 .83.67 1.5 1.5 1.5.83 0 1.5-.67 1.5-1.5 0-.83-.67-1.5-1.5-1.5zm6.5-1.4C17.47 7.02 14.15 3.88 12 2c-.63 1.4-1.63 2.94-2.83 4.41C7.39 8.6 6 10.74 6 13.5c0 3.31 2.69 6 6 6s6-2.69 6-6c0-.77-.18-1.51-.5-2.1zM12 18c-2.48 0-4.5-2.02-4.5-4.5 0-1.76.99-3.3 2.37-4.87.89-1.02 1.63-2.14 2.13-3.23 1.54 1.51 4 4.09 4 8.1 0 2.48-2.02 4.5-4.5 4.5z" />
+                  </svg>
+                </div>
+                <h3 class="about-pillar-title">Smash Raiz</h3>
+                <p class="about-pillar-desc">Prensado na hora para máxima crosta e suculência.</p>
+              </div>
+              <div class="about-pillar-card">
+                <div class="about-pillar-icon-box" aria-hidden="true">
+                  <!-- Ícone Alma / Paixão Artesanal Carioca -->
+                  <svg viewBox="0 0 24 24">
+                    <path
+                      d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                  </svg>
+                </div>
+                <h3 class="about-pillar-title">Alma Carioca</h3>
+                <p class="about-pillar-desc">Clima acolhedor de bairro e chopp trincando.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO: PEDIR É SIMPLES (Fundo Amarelo Mostarda com Textura) -->
+    <section class="steps-section" id="como-pedir" aria-labelledby="steps-title">
+      <!-- Textura sutil de marcas de grelha -->
+      <div class="steps-texture-bg" aria-hidden="true"></div>
+
+      <div class="container">
+        <!-- Título Centralizado -->
+        <h2 class="steps-title" id="steps-title" data-reveal>
+          Pedir é simples
+        </h2>
+
+        <!-- 3 Passos Conectados por Linha Tracejada -->
+        <div class="steps-container">
+          <!-- Passo 1 -->
+          <div class="step-card" data-reveal>
+            <div class="step-number-circle" aria-hidden="true">1</div>
+            <h3 class="step-title">Escolha</h3>
+            <p class="step-desc">
+              Escolha seu burger no cardápio.
+            </p>
+          </div>
+
+          <!-- Passo 2 -->
+          <div class="step-card delay-1" data-reveal>
+            <div class="step-number-circle" aria-hidden="true">2</div>
+            <h3 class="step-title">Chame</h3>
+            <p class="step-desc">
+              Chame a gente no WhatsApp ou no delivery.
+            </p>
+          </div>
+
+          <!-- Passo 3 -->
+          <div class="step-card delay-2" data-reveal>
+            <div class="step-number-circle" aria-hidden="true">3</div>
+            <h3 class="step-title">Receba</h3>
+            <p class="step-desc">
+              Receba quentinho, do jeito que saiu da chapa.
+            </p>
+          </div>
+        </div>
+
+        <!-- Botão Centralizado Abaixo -->
+        <div class="steps-cta-wrapper" data-reveal>
+          <a href="https://wa.me/5521999999999" target="_blank" rel="noopener noreferrer" class="btn-steps-order"
+            id="steps-btn-whatsapp">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"
+              style="margin-right: 4px;">
+              <path
+                d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67M9.04 7.42C8.88 7.42 8.63 7.48 8.41 7.72C8.19 7.96 7.58 8.53 7.58 9.68C7.58 10.84 8.43 11.95 8.55 12.11C8.67 12.27 10.2 14.62 12.53 15.63C13.09 15.87 13.51 16.01 13.85 16.12C14.41 16.3 14.92 16.27 15.32 16.21C15.77 16.14 16.7 15.65 16.89 15.11C17.08 14.57 17.08 14.11 17.02 14.01C16.96 13.92 16.81 13.86 16.58 13.75C16.35 13.63 15.24 13.09 15.03 13.01C14.83 12.94 14.68 12.9 14.53 13.13C14.38 13.36 13.95 13.86 13.82 14.01C13.69 14.16 13.57 14.18 13.34 14.07C13.11 13.95 12.38 13.71 11.51 12.94C10.83 12.34 10.37 11.59 10.25 11.36C10.12 11.13 10.23 11.01 10.35 10.89C10.45 10.79 10.57 10.63 10.69 10.5C10.8 10.36 10.84 10.27 10.92 10.11C11 9.96 10.96 9.82 10.9 9.71C10.84 9.6 10.4 8.49 10.21 8.04C10.02 7.6 9.84 7.66 9.7 7.65C9.57 7.65 9.42 7.65 9.27 7.65L9.04 7.42Z" />
+            </svg>
+            Pedir pelo WhatsApp
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAIXA DE IMAGEM DO AMBIENTE (Altura 320px) -->
+    <div class="ambient-banner" aria-label="Ambiente acolhedor da hamburgueria Chapa Quente Burger Co.">
+      <img src="assets/images/ambient-banner.jpg"
+        alt="Ambiente acolhedor e aconchegante da hamburgueria Chapa Quente com balcão de madeira, luminárias quentes e clientes descontraídos"
+        class="ambient-banner-img" width="1920" height="820" loading="lazy">
+      <div class="ambient-banner-overlay" aria-hidden="true"></div>
+    </div>
+
+    <!-- SEÇÃO: VEM PRA CHAPA (Fundo Preto Carvão) -->
+    <section class="location-section" id="localizacao" aria-labelledby="location-title">
+      <div class="container">
+        <div class="location-grid">
+          <!-- Coluna Esquerda: Informações & Contato -->
+          <div class="location-info" data-reveal>
+            <h2 class="location-title" id="location-title">
+              Vem pra Chapa
+            </h2>
+
+            <div class="location-details-list">
+              <!-- Endereço -->
+              <div class="location-item">
+                <div class="location-item-icon" aria-hidden="true">
+                  <!-- Ícone Localização -->
+                  <svg viewBox="0 0 24 24">
+                    <path
+                      d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+                  </svg>
+                </div>
+                <div class="location-item-text">
+                  <span class="location-item-label">Endereço</span>
+                  <p class="location-item-value">Rua das Palmeiras, 123, Rio de Janeiro, RJ</p>
+                </div>
+              </div>
+
+              <!-- Horários -->
+              <div class="location-item">
+                <div class="location-item-icon" aria-hidden="true">
+                  <!-- Ícone Horário / Relógio -->
+                  <svg viewBox="0 0 24 24">
+                    <path
+                      d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z" />
+                  </svg>
+                </div>
+                <div class="location-item-text">
+                  <span class="location-item-label">Horários</span>
+                  <p class="location-item-value">Ter a Qui: 18h às 23h | Sex a Dom: 12h às 00h | Seg: fechado</p>
+                </div>
+              </div>
+
+              <!-- WhatsApp -->
+              <div class="location-item">
+                <div class="location-item-icon" aria-hidden="true">
+                  <!-- Ícone WhatsApp -->
+                  <svg viewBox="0 0 24 24">
+                    <path
+                      d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67M9.04 7.42C8.88 7.42 8.63 7.48 8.41 7.72C8.19 7.96 7.58 8.53 7.58 9.68C7.58 10.84 8.43 11.95 8.55 12.11C8.67 12.27 10.2 14.62 12.53 15.63C13.09 15.87 13.51 16.01 13.85 16.12C14.41 16.3 14.92 16.27 15.32 16.21C15.77 16.14 16.7 15.65 16.89 15.11C17.08 14.57 17.08 14.11 17.02 14.01C16.96 13.92 16.81 13.86 16.58 13.75C16.35 13.63 15.24 13.09 15.03 13.01C14.83 12.94 14.68 12.9 14.53 13.13C14.38 13.36 13.95 13.86 13.82 14.01C13.69 14.16 13.57 14.18 13.34 14.07C13.11 13.95 12.38 13.71 11.51 12.94C10.83 12.34 10.37 11.59 10.25 11.36C10.12 11.13 10.23 11.01 10.35 10.89C10.45 10.79 10.57 10.63 10.69 10.5C10.8 10.36 10.84 10.27 10.92 10.11C11 9.96 10.96 9.82 10.9 9.71C10.84 9.6 10.4 8.49 10.21 8.04C10.02 7.6 9.84 7.66 9.7 7.65C9.57 7.65 9.42 7.65 9.27 7.65L9.04 7.42Z" />
+                  </svg>
+                </div>
+                <div class="location-item-text">
+                  <span class="location-item-label">WhatsApp</span>
+                  <p class="location-item-value">
+                    <a href="https://wa.me/5521999999999" target="_blank" rel="noopener noreferrer">(21) 99999-9999</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Botões de Ação -->
+            <div class="location-buttons-group">
+              <a href="https://www.google.com/maps/search/?api=1&query=Rua+das+Palmeiras,+123,+Rio+de+Janeiro,+RJ"
+                target="_blank" rel="noopener noreferrer" class="btn btn-mustard" id="btn-directions">
+                Como chegar
+              </a>
+              <a href="https://wa.me/5521999999999" target="_blank" rel="noopener noreferrer"
+                class="btn btn-outline-offwhite" id="location-btn-whatsapp">
+                Pedir pelo WhatsApp
+              </a>
+            </div>
+          </div>
+
+          <!-- Coluna Direita: Mapa Incorporado -->
+          <div class="location-map-wrapper delay-1" data-reveal>
+            <iframe
+              src="https://maps.google.com/maps?q=Rua%20das%20Palmeiras%2C%20123%2C%20Rio%20de%20Janeiro&t=&z=15&ie=UTF8&iwloc=&output=embed"
+              class="location-map-iframe" title="Localização da Chapa Quente Burger Co. no Google Maps" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO: CHAMADA FINAL (Fundo Imagem + Overlay Vermelho Tomate 80%) -->
+    <section class="final-cta-section" id="chamada-final" aria-labelledby="cta-title">
+      <!-- Imagem de Fundo (Flat lay de hambúrgueres e batatas) -->
+      <img src="assets/images/cta-banner.jpg"
+        alt="Bandeja de smash burgers artesanais, batatas fritas crocantes e refrigerantes gelados"
+        class="final-cta-bg-img" width="1920" height="900" loading="lazy">
+      <!-- Overlay Vermelho Tomate #D62828 a 80% -->
+      <div class="final-cta-overlay" aria-hidden="true"></div>
+
+      <div class="container">
+        <div class="final-cta-content" data-reveal>
+          <h2 class="final-cta-title" id="cta-title">
+            Bateu a fome?
+          </h2>
+          <p class="final-cta-subtitle">
+            A chapa já está quente. Escolha seu burger e peça agora.
+          </p>
+          <a href="https://wa.me/5521999999999" target="_blank" rel="noopener noreferrer" class="btn-final-whatsapp"
+            id="final-btn-whatsapp">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67M9.04 7.42C8.88 7.42 8.63 7.48 8.41 7.72C8.19 7.96 7.58 8.53 7.58 9.68C7.58 10.84 8.43 11.95 8.55 12.11C8.67 12.27 10.2 14.62 12.53 15.63C13.09 15.87 13.51 16.01 13.85 16.12C14.41 16.3 14.92 16.27 15.32 16.21C15.77 16.14 16.7 15.65 16.89 15.11C17.08 14.57 17.08 14.11 17.02 14.01C16.96 13.92 16.81 13.86 16.58 13.75C16.35 13.63 15.24 13.09 15.03 13.01C14.83 12.94 14.68 12.9 14.53 13.13C14.38 13.36 13.95 13.86 13.82 14.01C13.69 14.16 13.57 14.18 13.34 14.07C13.11 13.95 12.38 13.71 11.51 12.94C10.83 12.34 10.37 11.59 10.25 11.36C10.12 11.13 10.23 11.01 10.35 10.89C10.45 10.79 10.57 10.63 10.69 10.5C10.8 10.36 10.84 10.27 10.92 10.11C11 9.96 10.96 9.82 10.9 9.71C10.84 9.6 10.4 8.49 10.21 8.04C10.02 7.6 9.84 7.66 9.7 7.65C9.57 7.65 9.42 7.65 9.27 7.65L9.04 7.42Z" />
+            </svg>
+            Pedir pelo WhatsApp
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- RODAPÉ DO SITE -->
+  <footer class="site-footer" id="rodape">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Coluna 1: Logo e Tagline -->
+        <div class="footer-brand-col">
+          <a href="index.html" aria-label="Chapa Quente Burger Co. - Início">
+            <img src="assets/images/Logo.png" alt="Logo Chapa Quente Burger Co." class="footer-logo-img" width="210"
+              height="48" loading="lazy">
+          </a>
+          <p class="footer-tagline">
+            "Smash na chapa, sabor sem pressa."
+          </p>
+        </div>
+
+        <!-- Coluna 2: Navegação -->
+        <div class="footer-nav-col">
+          <h3 class="footer-col-title">Navegação</h3>
+          <ul class="footer-links-list">
+            <li><a href="index.html" class="footer-link">Início</a></li>
+            <li><a href="#sobre" class="footer-link">Sobre</a></li>
+            <li><a href="cardapio.html" class="footer-link">Cardápio</a></li>
+            <li>
+              <a href="https://wa.me/5521999999999" target="_blank" rel="noopener noreferrer"
+                class="footer-link footer-link-highlight">
+                Pedir pelo WhatsApp
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Coluna 3: Contato & Redes -->
+        <div class="footer-contact-col">
+          <h3 class="footer-col-title">Contato</h3>
+          <p class="footer-contact-text">
+            <span class="footer-contact-highlight">Endereço:</span><br>
+            Rua das Palmeiras, 123, Rio de Janeiro, RJ
+          </p>
+          <p class="footer-contact-text">
+            <span class="footer-contact-highlight">Horários:</span><br>
+            Ter a Qui: 18h às 23h | Sex a Dom: 12h às 00h
+          </p>
+          <!-- Ícones Redes Sociais e Delivery -->
+          <div class="footer-social-row" aria-label="Canais e redes sociais">
+            <!-- Instagram -->
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn"
+              aria-label="Siga-nos no Instagram">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+              </svg>
+            </a>
+            <!-- WhatsApp -->
+            <a href="https://wa.me/5521999999999" target="_blank" rel="noopener noreferrer" class="footer-social-btn"
+              aria-label="Fale conosco no WhatsApp">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67M9.04 7.42C8.88 7.42 8.63 7.48 8.41 7.72C8.19 7.96 7.58 8.53 7.58 9.68C7.58 10.84 8.43 11.95 8.55 12.11C8.67 12.27 10.2 14.62 12.53 15.63C13.09 15.87 13.51 16.01 13.85 16.12C14.41 16.3 14.92 16.27 15.32 16.21C15.77 16.14 16.7 15.65 16.89 15.11C17.08 14.57 17.08 14.11 17.02 14.01C16.96 13.92 16.81 13.86 16.58 13.75C16.35 13.63 15.24 13.09 15.03 13.01C14.83 12.94 14.68 12.9 14.53 13.13C14.38 13.36 13.95 13.86 13.82 14.01C13.69 14.16 13.57 14.18 13.34 14.07C13.11 13.95 12.38 13.71 11.51 12.94C10.83 12.34 10.37 11.59 10.25 11.36C10.12 11.13 10.23 11.01 10.35 10.89C10.45 10.79 10.57 10.63 10.69 10.5C10.8 10.36 10.84 10.27 10.92 10.11C11 9.96 10.96 9.82 10.9 9.71C10.84 9.6 10.4 8.49 10.21 8.04C10.02 7.6 9.84 7.66 9.7 7.65C9.57 7.65 9.42 7.65 9.27 7.65L9.04 7.42Z" />
+              </svg>
+            </a>
+            <!-- Delivery / Pedidos -->
+            <a href="https://wa.me/5521999999999" target="_blank" rel="noopener noreferrer" class="footer-social-btn"
+              aria-label="Peça seu Delivery">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M19 7h-3V6a4 4 0 0 0-8 0v1H5a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm-9-1a2 2 0 0 1 4 0v1h-4V6zm9 14H5V9h14v11z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Faixa Inferior de Direitos -->
+    <div class="footer-bottom">
+      <div class="container">
+        <p class="footer-copyright">
+          Chapa Quente Burger Co. © 2026. Todos os direitos reservados. Desenvolvido por <strong
+            class="developer-credit">Web em Vista</strong>. Site fictício para fins de demonstração.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botão Flutuante de WhatsApp -->
+  <a href="https://wa.me/5521999999999" target="_blank" rel="noopener noreferrer" class="whatsapp-floating"
+    aria-label="Fale conosco pelo WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path
+        d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67M9.04 7.42C8.88 7.42 8.63 7.48 8.41 7.72C8.19 7.96 7.58 8.53 7.58 9.68C7.58 10.84 8.43 11.95 8.55 12.11C8.67 12.27 10.2 14.62 12.53 15.63C13.09 15.87 13.51 16.01 13.85 16.12C14.41 16.3 14.92 16.27 15.32 16.21C15.77 16.14 16.7 15.65 16.89 15.11C17.08 14.57 17.08 14.11 17.02 14.01C16.96 13.92 16.81 13.86 16.58 13.75C16.35 13.63 15.24 13.09 15.03 13.01C14.83 12.94 14.68 12.9 14.53 13.13C14.38 13.36 13.95 13.86 13.82 14.01C13.69 14.16 13.57 14.18 13.34 14.07C13.11 13.95 12.38 13.71 11.51 12.94C10.83 12.34 10.37 11.59 10.25 11.36C10.12 11.13 10.23 11.01 10.35 10.89C10.45 10.79 10.57 10.63 10.69 10.5C10.8 10.36 10.84 10.27 10.92 10.11C11 9.96 10.96 9.82 10.9 9.71C10.84 9.6 10.4 8.49 10.21 8.04C10.02 7.6 9.84 7.66 9.7 7.65C9.57 7.65 9.42 7.65 9.27 7.65L9.04 7.42Z" />
+    </svg>
+  </a>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>
